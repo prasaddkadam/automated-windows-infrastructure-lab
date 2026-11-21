@@ -1,0 +1,45 @@
+# Terraform provider downloads and runtime state
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.tfplan.*
+crash.log
+crash.*.log
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+!*.tfvars.json.example
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# Credentials, certificates and keys
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+*.kdbx
+*credentials*.json
+*secrets*.json
+
+# Generated operational outputs (keep sanitised examples elsewhere)
+output/
+outputs/
+reports/
+logs/
+*.log
+*.bak
+*.zip
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

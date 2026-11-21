@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 780" role="img" aria-labelledby="title desc">
+<title id="title">Windows infrastructure lab architecture</title>
+<desc id="desc">Windows management workstation connects over a home LAN to a bare metal Proxmox host that runs DC01 and FS01, with optional CLIENT01. External backup storage is used for periodic backups, not live VM disks.</desc>
+<rect x="0" y="0" width="1080" height="780" rx="24" fill="#0c1017"/>
+<rect x="18" y="18" width="1044" height="744" rx="20" fill="#0e141d" stroke="#273447" stroke-width="2"/>
+<text x="50" y="58" fill="#a5b4c8" font-family="Arial, sans-serif" font-size="18" font-weight="bold" letter-spacing="1">INFRASTRUCTURE ARCHITECTURE</text>
+
+<rect x="260" y="109" width="560" height="100" rx="15" fill="#182331" stroke="#3b5267" stroke-width="2"/>
+<rect x="281" y="133" width="40" height="32" rx="6" fill="none" stroke="#71d6c9" stroke-width="3"/>
+<path d="M290 171h22m-11-6v6" fill="none" stroke="#71d6c9" stroke-width="3" stroke-linecap="round"/>
+<text x="342" y="148" fill="#f4f7fc" font-size="22" font-family="Arial, sans-serif" font-weight="bold">Management Workstation</text>
+<text x="342" y="178" fill="#adbbcb" font-size="17" font-family="Arial, sans-serif">Terraform  ·  PowerShell  ·  Git</text>
+<line x1="540" y1="209" x2="540" y2="270" stroke="#71d6c9" stroke-width="3" stroke-dasharray="6 7"/>
+<path d="M532 261l8 10 8-10" fill="none" stroke="#71d6c9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="390" y="227" width="300" height="29" rx="14" fill="#213643"/>
+<text x="540" y="247" fill="#b6f3e8" font-size="14" font-family="Arial, sans-serif" text-anchor="middle">Home LAN  ·  HTTPS API / WinRM</text>
+<rect x="44" y="281" width="992" height="393" rx="20" fill="#141e29" stroke="#506174" stroke-width="2"/>
+<rect x="66" y="306" width="44" height="42" rx="8" fill="#172d34" stroke="#71d6c9" stroke-width="2"/>
+<path d="M77 319h22M77 334h22" stroke="#71d6c9" stroke-width="3" stroke-linecap="round"/>
+<text x="125" y="328" fill="#f6f8fb" font-size="25" font-weight="bold" font-family="Arial, sans-serif">Bare Metal Host</text>
+<text x="125" y="353" fill="#adbbcb" font-size="16" font-family="Arial, sans-serif">Proxmox VE  ·  Standalone node  ·  vmbr0 bridge  ·  Internal NVMe</text>
+<rect x="79" y="386" width="441" height="185" rx="14" fill="#0e141d" stroke="#415166" stroke-width="2"/>
+<rect x="559" y="386" width="441" height="185" rx="14" fill="#0e141d" stroke="#415166" stroke-width="2"/>
+<rect x="97" y="406" width="48" height="28" rx="4" fill="#1f3c42"/>
+<path d="M106 414h30M106 425h30" stroke="#71d6c9" stroke-width="3" stroke-linecap="round"/>
+<text x="158" y="429" fill="#f6f8fb" font-size="23" font-weight="bold" font-family="Arial, sans-serif">DC01</text>
+<text x="101" y="467" fill="#adbbcb" font-size="16" font-family="Arial, sans-serif">Windows Server · Domain controller</text>
+<line x1="101" y1="481" x2="491" y2="481" stroke="#304158"/>
+<text x="101" y="510" fill="#dce5ed" font-size="18" font-family="Arial, sans-serif">Active Directory  ·  DNS  ·  Group Policy</text>
+<rect x="101" y="531" width="104" height="27" rx="13" fill="#273949"/>
+<text x="153" y="550" text-anchor="middle" fill="#d0e5ec" font-size="14" font-family="Arial, sans-serif">4 GiB RAM</text>
+<rect x="577" y="406" width="48" height="28" rx="4" fill="#1f3c42"/>
+<path d="M586 414h30M586 425h30" stroke="#71d6c9" stroke-width="3" stroke-linecap="round"/>
+<text x="638" y="429" fill="#f6f8fb" font-size="23" font-weight="bold" font-family="Arial, sans-serif">FS01</text>
+<text x="581" y="467" fill="#adbbcb" font-size="16" font-family="Arial, sans-serif">Windows Server · Domain member</text>
+<line x1="581" y1="481" x2="971" y2="481" stroke="#304158"/>
+<text x="581" y="510" fill="#dce5ed" font-size="18" font-family="Arial, sans-serif">SMB File Services  ·  NTFS Permissions</text>
+<rect x="581" y="531" width="104" height="27" rx="13" fill="#273949"/>
+<text x="633" y="550" text-anchor="middle" fill="#d0e5ec" font-size="14" font-family="Arial, sans-serif">4 GiB RAM</text>
+<rect x="79" y="595" width="921" height="57" rx="12" fill="#111a24" stroke="#455467" stroke-width="2" stroke-dasharray="7 6"/>
+<text x="102" y="629" fill="#e5edf4" font-size="19" font-weight="bold" font-family="Arial, sans-serif">CLIENT01</text>
+<text x="227" y="628" fill="#9daec0" font-size="16" font-family="Arial, sans-serif">Optional test client · Domain login and GPO validation</text>
+
+
+<line x1="540" y1="674" x2="540" y2="711" stroke="#6b8397" stroke-width="2" stroke-dasharray="6 6"/>
+<rect x="277" y="707" width="526" height="37" rx="12" fill="#182331" stroke="#415166"/>
+<text x="540" y="731" fill="#adbbcb" font-size="16" text-anchor="middle" font-family="Arial, sans-serif">Periodic external backup  ·  Verified recovery</text>
+</svg>
